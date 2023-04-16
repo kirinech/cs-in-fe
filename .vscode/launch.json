@@ -1,0 +1,41 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ts-node",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "${fileBasenameNoExtension}", "--config", "jest.config.ts"
+      ],
+      // "runtimeArgs": [
+      //   "-r",
+      //   "ts-node/register",
+      //   // "--inspect-brk",
+      //   // "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      //   // "--config",
+      //   // "${workspaceRoot}/jest.config.ts",
+      //   // "--runInBand",
+
+      //   "--config",
+      //   "${workspaceRoot}/jest.config.ts",
+      //   "--runInBand",
+      //   "--runTestsByPath",
+      //   "${relativeFile}",
+      //   "--testPathPattern=${fileDirname}",
+      //   "--testTimeout=10000000"
+      // ],
+      // "cwd": "${workspaceRoot}",
+      // "internalConsoleOptions": "openOnSessionStart",
+      // "disableOptimisticBPs": true,
+      "console": "integratedTerminal",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    }
+  ]
+}
