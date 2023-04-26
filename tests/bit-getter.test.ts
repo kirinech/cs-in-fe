@@ -1,4 +1,4 @@
-import { BitGetter } from "../base/bit-getter"
+import { BitGetter } from "../base/1/bit-getter"
 
 describe('BitGetter', () => {
   it('get(index, offset)', () => {

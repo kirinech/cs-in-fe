@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Stolen boilerplate</h1>
+
+        <section class="content">
+          <div id="drop-area">
+            <form class="my-form">
+              <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+              <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+              <label class="button" for="fileElem">Select some files</label>
+            </form>
+          </div>
+          <button onclick="handleClear()">Clear select</button>
+          <div class="img-container">
+            <canvas id="uploaded"></canvas>
+            <canvas id="grayscale"></canvas>
+            <canvas id="inverse"></canvas>
+            <canvas id="both"></canvas>
+          </div>
+      </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
