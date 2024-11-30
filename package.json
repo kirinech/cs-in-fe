@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "homework": "ts-node ./src/lesson-${npm_config_lesson}",
     "test": "jest"
   },
   "repository": {
